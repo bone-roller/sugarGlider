@@ -1,0 +1,22 @@
+{
+  "name": "sugarglider",
+  "version": "1.0.0",
+  "description": "sugar Glider",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bone-roller/sugarGlider.git"
+  },
+  "author": "John Goossen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bone-roller/sugarGlider/issues"
+  },
+  "homepage": "https://github.com/bone-roller/sugarGlider#readme",
+  "dependencies": {
+    "electron": "^2.0.5"
+  }
+}
