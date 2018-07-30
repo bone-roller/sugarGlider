@@ -1,0 +1,4 @@
+## files git should ignore
+
+## node_modules
+[Nn]ode_modules/
