@@ -14,61 +14,74 @@
 .tool_01{
     grid-column:1;
     grid-row:1;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_02{
     grid-column:1;
     grid-row:2;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_03{
     grid-column:1;
     grid-row:3;
+    text-align: center;
     border:1px solid #333;
 }
+
 .tool_04{
     grid-column:1;
     grid-row:4;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_05{
     grid-column:1;
     grid-row:5;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_06{
     grid-column:1;
     grid-row:6;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_07{
     grid-column:1;
     grid-row:7;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_08{
     grid-column:1;
     grid-row:8;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_09{
     grid-column:1;
     grid-row:9;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_10{
     grid-column:1;
     grid-row:10;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_11{
     grid-column:1;
     grid-row:11;
+    text-align: center;
     border:1px solid #333;
 }
 .tool_12{
     grid-column:1;
     grid-row:12;
+    text-align: center;
     border:1px solid #333;
 }
 
@@ -107,6 +120,37 @@
     grid-row:6;
     border:1px solid #333;
 }
+.ticket_01{
+    grid-column:2;
+    grid-row:6;
+    text-align: center;
+    border:1px solid #333;
+}
+
+.ticket_02{
+    grid-column:3;
+    grid-row:6;
+    text-align: center;
+    border:1px solid #333;
+}
+
+.ticket_03{
+    grid-column:4;
+    grid-row:6;
+    text-align: center;
+    border:1px solid #333;
+}
+
+.ticket_04{
+    grid-column:5;
+    grid-row:6;
+    text-align: center;
+    border:1px solid #333;
+}
+
+.ticket_totals{
+    text-align: right;
+}
 .ticket_subtotal{
     grid-column:6/8;
     grid-row:6;
@@ -126,120 +170,140 @@
 .key_printreciept{
     grid-column:13;
     grid-row:1;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_discount{
     grid-column:14;
     grid-row:1;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_printreciept2{
     grid-column:15;
     grid-row:1;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_drawer{
     grid-column:16;
     grid-row:1;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_CE{
     grid-column:13/15;
     grid-row:2;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_multiply{
     grid-column:15;
     grid-row:2;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_subtract{
     grid-column:16;
     grid-row:2;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_1{
     grid-column:13;
     grid-row:3;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_2{
     grid-column:14;
     grid-row:3;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_3{
     grid-column:15;
     grid-row:3;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_4{
     grid-column:13;
     grid-row:4;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_5{
     grid-column:14;
     grid-row:4;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_6{
     grid-column:15;
     grid-row:4;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_7{
     grid-column:13;
     grid-row:5;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_8{
     grid-column:14;
     grid-row:5;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_9{
     grid-column:15;
     grid-row:5;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_0{
     grid-column:13/15;
     grid-row:6;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_add{
     grid-column:16;
     grid-row:3/5;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_pay{
     grid-column:16;
     grid-row:5/7;
+    text-align: center;
     border:1px solid #333;
 }
 
 .key_dot{
     grid-column:15;
     grid-row:6;
+    text-align: center;
     border:1px solid #333;
 }
 
