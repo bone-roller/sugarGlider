@@ -14,7 +14,7 @@
     "url": "git+https://github.com/bone-roller/sugarGlider.git"
   },
   "author": "John Goossen",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bone-roller/sugarGlider/issues"
   },
