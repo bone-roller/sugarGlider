@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<!--    <script src="main.js"></script> -->
+</head>
+<body>
+        <button>Clicke Me!</button>
+        <ul>
+            <li>list</li>
+        </ul>
+
+    <script>
+            const ul = document.querySelector('ul');
+        function Apple(type) {
+            this.type = type;
+            this.color = "red";
+        }
+        Apple.prototype.getInfo = function () {
+            return this.color + ' ' + this.type + ' apple';
+        };
+
+        let myApple = new Apple("roma");
+        console.log(myApple.getInfo());
+
+        let yourApple = new Apple("Macintosh");
+        console.log(yourApple.getInfo());
+
+        yourApple = myApple;
+
+        console.log("Now your apple " + yourApple.getInfo());
+        button.addEventListener('click', removeItem);
+        ul.addEventListener('click', removeItem);
+        function removeItem(e) {
+            e.target.remove();
+            if(ul.children.length == 0){
+                ul.className = '';
+            }
+        }
+
+
+        </script>
+    
+</body>
+</html>

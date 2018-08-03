@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sugarGlider initial configuration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .wrapper{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display:grid;
+            grid-template-columns: repeat(16, 1fr); /*1fr 2fr 1fr 1fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr; */
+            grid-template-rows: repeat(12, 3rem); /*3rem works for 1024x768*/
+            grid-gap:1rem;
+        }
+        h4{
+            margin-top: 3px;
+        }
+        .db_form{
+            grid-area: 1/1/10/6;
+            text-align: left;
+            border:1px solid #333;
+            padding: 3px
+        }
+        .skin_form{
+            grid-area: 1/6/10/11;
+            text-align: left;
+            border:1px solid #333;
+            padding: 3px
+        }
+        .misc_form{
+            grid-area: 1/11/10/16;
+            text-align: left;
+            border:1px solid #333;
+            padding: 3px
+        }
+        .reset{
+            grid-area: 7/16/8/17;
+            text-align: left;
+            border:1px solid #333;
+            padding: 3px
+        }
+        .cancel{
+            grid-area: 8/16/9/17;
+            text-align: left;
+            border:1px solid #333;
+            padding: 3px
+        }
+        .submit{
+            grid-area: 9/16/10/17;
+            text-align: left;
+            border:1px solid #333;
+            padding: 3px
+        }
+        label{
+            float: left;
+            width: 6em;
+            text-align: right;
+            margin-right: 0.25em;
+            display: block /* not sure what this does */
+        }
+        input, textarea{
+            text-align: left;
+            color: #781351;
+            background: #fee3ad;
+            border: 1px solid #781351
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div class="wrapper">
+            <div class="db_form"><h4>MySQL database settings:</h4>
+                <label>server:</label> <input type="text" value="localhost"><p>
+                <label>port:</label><input type="text" value="3306"><p>
+                <label>database:</label><input type="text" value="sugarglider"><p>
+                <label>user:</label><input type="text" value="root"><p>
+                <label>password:</label><input type="password"><p>
+                <center>
+                    <button type="button">Create Database</button>
+                    <button type="button">Test Connection</button>
+                </center>
+            </div>
+            <div class="skin_form"><h4>skin settings:</h4>
+                <label>choose skin:</label><input type="file" accept=".json" value="./skins/sugarGlider/skin.json"><p>
+                <center>
+                    <button type="button">Load skin</button><p>
+                        <img src="./skins/sugarGlider/applications-system.png">
+                </p></center>
+                
+            </div>
+            <div class="misc_form"><h4>misc settings:</h4>
+            </div>
+            <div class="reset">Reset</div>
+            <div class="cancel">Cancel</div>
+            <div class="submit">OK</div>
+        </div>
+    </form>
+</body>
+</html>
