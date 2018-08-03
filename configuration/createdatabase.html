@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/database.js"></script>
+    <style>
+            .wrapper{
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                display:grid;
+                grid-template-columns: repeat(16, 1fr); /*1fr 2fr 1fr 1fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr; */
+                grid-template-rows: repeat(12, 3rem); /*3rem works for 1024x768*/
+                grid-gap:1rem;
+            }
+            h4{
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+            .db_form{
+                grid-area: 1/1/10/6;
+                text-align: left;
+                border:1px solid #333;
+                padding: 3px
+            }
+            .skin_form{
+                grid-area: 1/6/10/11;
+                text-align: left;
+                border:1px solid #333;
+                padding: 3px
+            }
+            .misc_form{
+                grid-area: 1/11/10/16;
+                text-align: left;
+                border:1px solid #333;
+                padding: 3px
+            }
+            .reset{
+                grid-area: 7/16/8/17;
+                text-align: left;
+                border:1px solid #333;
+                padding: 3px
+            }
+            .cancel{
+                grid-area: 8/16/9/17;
+                text-align: left;
+                border:1px solid #333;
+                padding: 3px
+            }
+            .submit{
+                grid-area: 9/16/10/17;
+                text-align: left;
+                border:1px solid #333;
+                padding: 3px
+            }
+            label{
+                float: left;
+                width: 6em;
+                text-align: right;
+                margin-right: 0.25em;
+                display: block /* not sure what this does */
+            }
+            input, textarea{
+                text-align: left;
+                color: #781351;
+                background: #fee3ad;
+                border: 1px solid #781351
+            }
+    
+        </style>
+</head>
+<body>
+    <form>
+        <div class="db_form"><h4>MySQL database settings:</h4>
+            <p>Please supply settings for database creation.<br>
+                This user must have create database permisions on the server.<br>
+                You will be allowed to create a more restricted user specifically for sugarGlider at the next step.</p>
+            <label>Server:</label> <input type="text" value="localhost"><p>
+            <label>Port:</label><input type="text" value="3306"><p>
+            <label>Database:</label><input type="text" value="sugarglider"><p>
+            <label>User:</label><input type="text" value="root"><p>
+            <label>Password:</label><input type="password"><p>
+            <label>Results: </label>This is where the reults should be displayed.
+            <center>
+                <button type="button">Create Database</button>
+                <button type="button">Test Connection</button>
+                <button type="button">Next</button>
+            </center>
+        </div>
+    </form>
+
+
+    
+</body>
+</html>
