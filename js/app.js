@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
 
-// the following parameters should be comming form the application
+// the following parameters should be comming from the application
 const connectionParameters = {
     host:'localhost',
     user:'root',
