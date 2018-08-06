@@ -1,4 +1,4 @@
-// run 'electron ./js/skin.js' to test
+// run 'electron ./js/skintest.js' to test
 
 const electron = require('electron');
 const url = require('url');
@@ -18,24 +18,32 @@ ipcMain.on('readyfor_css', function(event, arg) {
   });
 
 
-let calculator;
+let calculatorscreen;
+let salesscreen;
 let skinfile;
 skinfile = '';
 
 
 app.on('ready', function(){
     // create new window
-    calculator = new BrowserWindow({});
+    calculatorscreen = new BrowserWindow({});
+    salesscreen = new BrowserWindow({width:1024, height:768, autoHideMenuBar:true, kiosk:true});
     // Load html file into window
-    calculator.loadURL(url.format({
-        pathname: path.join(__dirname, '../screens/calculator.html'),
+    calculatorscreen.loadURL(url.format({
+        pathname: path.join(__dirname, '../screens/calc.html'),
         protocol:'file:',
         slashes: true
-    }));
+    }))
+    salesscreen.loadURL(url.format({
+        pathname: path.join(__dirname, '../screens/sale.html'),
+        protocol:'file',
+        slashes:true
+    }))
+    ;
 
 
     // quit app when shoppinglistWindow is closed
-    calculator.on('closed', function () {
+    calculatorscreen.on('closed', function () {
         app.quit();
     });
 });
